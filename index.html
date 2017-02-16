@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/triviaStyle.css">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="./assets/javascript/triviaGame.js"></script>
+
+	<title>HW5 - Trivia Game </title>
+</head>
+<body>
+	<div id="game-container">
+
+
+
+		<div id="game-top">
+
+			<div id="timer">00:00</div>
+
+			<div id="race-visuals">
+				<div id="start-gate"></div>
+				<div id="snails-holder">
+					<div id="snail-3-holder">
+						<div id="snail-3"></div>
+						<div id="snail-3-trail"></div>
+					</div>
+
+					<div id="snail-2-holder">
+						<div id="snail-2"></div>
+						<div id="snail-2-trail"></div>
+					</div>
+
+					<div id="snail-player-holder">
+						<div id="snail-player"></div>
+						<div id="snail-player-trail"></div>
+					</div>
+				</div>
+				<div id="goal-post"></div>
+			</div>
+
+		</div>
+
+
+
+		<div id="game-middle">
+			<div id="main-display"></div>
+			<div id="sub-display"></div>
+		</div>
+
+
+
+		<div id="game-bottom">
+			<div id="row-1">
+				<div class="question-holder">
+					<div class="q-a">
+						<div class="question">
+							A question goes here
+						</div>
+						<div action="" class="answers-holder">
+							<div class="answer">
+						    	<input type="radio" name="group1" id="radio-1">
+						    	<label for="radio-1"><span class="radio">Coffee</span></label>
+						    </div>
+						    <div class="answer">
+						    	<input type="radio" name="group1" id="radio-2">
+						    	<label for="radio-2"><span class="radio">Tea</span></label>
+						    </div>
+						    <div class="answer">
+						    	<input type="radio" name="group1" id="radio-3">
+						    	<label for="radio-3"><span class="radio">Cappuccino</span></label>
+						    </div>
+						</div>
+					</div>
+					<button class="submit-answer-btn">
+						<div class="submit-text">submit<br>answer?</div>
+						<div class="submit-sub-text hide">time answered</div>
+					</button>
+				</div>
+
+				<!-- <button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button> -->
+			</div>
+			<div id="row-2">
+
+				<div class="question-holder">
+					<div class="q-a">
+						<div class="question">
+							A question goes here, howlong could it possiblye, this long, maybe, yea okay,
+							one more line to test?
+						</div>
+						<div class="answers-holder">
+							<div class="answer">
+						    	<input type="radio" name="group2" id="radio-4">
+						    	<label for="radio-4"><span class="radio">Coffee</span></label>
+						    </div>
+						    <div class="answer">
+						    	<input type="radio" name="group2" id="radio-5">
+						    	<label for="radio-5"><span class="radio">Tea</span></label>
+						    </div>
+						    <div class="answer">
+						    	<input type="radio" name="group2" id="radio-6">
+						    	<label for="radio-6"><span class="radio">Cappuccino</span></label>
+						    </div>
+						</div>
+					</div>
+					<button class="submit-answer-btn">
+						<div class="submit-text">submit<br>answer?</div>
+						<div class="submit-sub-text hide">time answered</div>
+					</button>
+				</div>
+
+				<!-- button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button> -->
+			</div>
+			<div id="row-3">
+
+				<div class="question-holder">
+					<div class="q-a">
+						<div class="question">
+							A question goes here
+						</div>
+						<div class="answers-holder">
+							<div class="answer">
+						    	<input type="radio" name="group3" id="radio-7">
+						    	<label for="radio-7"><span class="radio">a very very very long answer</span></label>
+						    </div>
+						    <div class="answer">
+						    	<input type="radio" name="group3" id="radio-8">
+						    	<label for="radio-8"><span class="radio">and a semi long one</span></label>
+						    </div>
+						    <div class="answer">
+						    	<input type="radio" name="group3" id="radio-9">
+						    	<label for="radio-9"><span class="radio">more than one word here</span></label>
+						    </div>
+						</div>
+					</div>
+					<button class="submit-answer-btn">
+						<div class="submit-text">submit<br>answer?</div>
+						<div class="submit-sub-text hide">time answered</div>
+					</button>
+				</div>
+
+				<!-- <button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button>
+				<button class="category-btn"></button> -->
+			</div>
+		</div>
+
+
+	</div>
+</body>
+</html>
