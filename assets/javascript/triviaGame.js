@@ -3,11 +3,11 @@ var gameStarted = false;
 var canStart = false;
 var timerInterval;
 var time = 0;
-var startTime = 10;
+var startTime = 45;
 var position_p1 = 0;
 var position_p2 = 0;
 var position_p3 = 0;
-var snailPower = 20;
+var snailPower = 4;
 var total_questionsAnswered = 0;
 var total_correctlyAnswered = 0;
 
