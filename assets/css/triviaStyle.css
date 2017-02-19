@@ -111,6 +111,7 @@ body{
           font-family: sans-serif;
           display: flex;
           cursor: default;
+          transition: margin-left 0.2s ease-in-out;
         }
           #snail-3:before{
             margin-left: -3vmin;
@@ -145,6 +146,7 @@ body{
           border-top-right-radius: 25%;
           border-bottom-right-radius: 25%;
           border-bottom:1px solid red;
+          transition: width 0.1s ease-in-out;
         }
         #snail-2-trail{
           width: 1%;
@@ -154,6 +156,7 @@ body{
           border-top-right-radius: 25%;
           border-bottom-right-radius: 25%;
           border-bottom:1px solid green;
+          transition: width 0.1s ease-in-out;
         }
         #snail-player-trail{
           width: 1%;
@@ -163,6 +166,7 @@ body{
           border-top-right-radius: 25%;
           border-bottom-right-radius: 25%;
           border-bottom:1px solid blue;
+          transition: width 0.1s ease-in-out;
         }
 
 
@@ -390,6 +394,7 @@ body{
       .answer span{
         font-size: 2vmin;
         text-align: left;
+        text-transform: capitalize;
         /*background-color: yellow;*/
         padding-left: 1vmin;
         -webkit-touch-callout: none; /* iOS Safari */
@@ -539,6 +544,61 @@ body{
     justify-content: center;
     text-transform: uppercase;
   }
+  #win-btn{
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 16vh;
+    /*background-color: rgba(0,255,0,0.5);*/
+    background-color: green;
+    border: 0px;
+    border-radius: 1vmin;
+    display: flex;
+  }
+  #row-3 #win-btn{
+    background-color: #333;
+  }
+  #row-3 #win-btn:hover , #row-3 #win-btn:focus {
+    background-color: #000;
+  }
+  #row-3 #win-btn div{
+    color:#ccc;
+  }
+  #win-btn div{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poller One', cursive;
+    font-size: 5vmin;
+    text-align:center;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  #win-stats{
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 16vh;
+    /*background-color: rgba(0,255,0,0.5);*/
+    /*background-color: green;*/
+    border: 0px;
+    border-radius: 1vmin;
+    display:inline-block;
+  }
+  #win-stats div{
+    background-color: #7f7f7f !important;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 4vmin;
+    padding: 1vmin 2vmin;
+    border-radius: 15px;
+    margin-bottom: 1vmin;
+  }
+  
 
 /*/////////////////////////////////////////////*/
 /*HOW TO POPUP*/

@@ -29,11 +29,11 @@ var television_arr = {
 	question3:"In what city does SpongeBob SquarePants live?",
 	question4:"Rod Serling created what famous science fiction television show?",
 	question5:"Which Teenage Mutant Ninja Turtle always wears red bandanas?",
-	q1_status:"new", q1_answer:"Four", q1_fake:"Three", q1_fake2:"Five", 
-	q2_status:"new", q2_answer:"Cosmo", q2_fake:"Costanza", q2_fake2:"Richard",
-	q3_status:"new", q3_answer:"Bikini Bottom", q3_fake:"Pinapple", q3_fake2:"The Sea", 
-	q4_status:"new", q4_answer:"The Twilight Zone", q4_fake:"Black Mirror", q4_fake2:"I Love Lucy", 
-	q5_status:"new", q5_answer:"Raphael", q5_fake:"Leonardo", q5_fake2:"Michelangelo" 
+	q1_status:"new", q1_answer:"Four", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Cosmo", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Bikini Bottom", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"The Twilight Zone", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Raphael", q5_fake:"a5_f", q5_fake2:"a1_f2" 
 };
 
 var science_arr = {
@@ -44,11 +44,11 @@ var science_arr = {
 	question3:"Which planet is farthest from the sun?",
 	question4:"What is the largest internal organ of the human body?",
 	question5:"Who came up with the three laws of motion?",
-	q1_status:"new", q1_answer:"32°F", q1_fake:"130°F", q1_fake2:"-3°F", 
-	q2_status:"new", q2_answer:"Six", q2_fake:"two", q2_fake2:"four",
-	q3_status:"new", q3_answer:"Neptune", q3_fake:"Saturn", q3_fake2:"Mercury", 
-	q4_status:"new", q4_answer:"Liver", q4_fake:"Tongue", q4_fake2:"Stomach", 
-	q5_status:"new", q5_answer:"Sir Isaac Newton", q5_fake:"Bill Nye", q5_fake2:"Albert Einstein"
+	q1_status:"new", q1_answer:"32°F", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Six", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Neptune", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"Liver", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Sir Isaac Newton", q5_fake:"a5_f", q5_fake2:"a1_f2"
 };
 
 var art_arr = {
@@ -59,11 +59,11 @@ var art_arr = {
 	question3:"What color do you get when you mix yellow and blue?",
 	question4:"The art of paper folding is known as what?",
 	question5:"Which painter started the impressionist movement?",
-	q1_status:"new", q1_answer:"Leonardo da Vinci", q1_fake:"Michelangelo", q1_fake2:"Pablo Picasso", 
-	q2_status:"new", q2_answer:"Auguste Rodin", q2_fake:"Michelangelo", q2_fake2:"Henry Moore",
-	q3_status:"new", q3_answer:"Green", q3_fake:"orange", q3_fake2:"purple", 
-	q4_status:"new", q4_answer:"Origami", q4_fake:"tarot", q4_fake2:"Fortune Teller", 
-	q5_status:"new", q5_answer:"Claude Monet", q5_fake:"Salvador Dali", q5_fake2:"Jackson Pollock" 
+	q1_status:"new", q1_answer:"Leonardo da Vinci", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Auguste Rodin", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Green", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"Origami", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Claude Monet", q5_fake:"a5_f", q5_fake2:"a1_f2" 
 };
 
 var geography_arr = {
@@ -74,11 +74,11 @@ var geography_arr = {
 	question3:"What city is the capital of Canada?",
 	question4:"Long Island is a part of which US state?",
 	question5:"What is the capital of Iceland?",
-	q1_status:"new", q1_answer:"Los Angeles", q1_fake:"Sedona", q1_fake2:"Laguna", 
-	q2_status:"new", q2_answer:"Beijing", q2_fake:"Hong Kong", q2_fake2:"Shanghai",
-	q3_status:"new", q3_answer:"Ottawa", q3_fake:"Quebec", q3_fake2:"Montreal", 
-	q4_status:"new", q4_answer:"New York", q4_fake:"New Jersey", q4_fake2:"Maine", 
-	q5_status:"new", q5_answer:"Reykjavik", q5_fake:"Kópavogur", q5_fake2:"Akranes" 
+	q1_status:"new", q1_answer:"Los Angeles", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Beijing", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Ottawa", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"New York", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Reykjavik", q5_fake:"a5_f", q5_fake2:"a1_f2" 
 };
 
 var music_arr = {
@@ -89,11 +89,11 @@ var music_arr = {
 	question3:"In what city was Ludwig van Beethoven born?",
 	question4:"How many keys are on most baby grand pianos?",
 	question5:"Where was the very first Hard Rock Cafe opened?",
-q1_status:"new", q1_answer:"Thriller by Michael Jackson", q1_fake:"True Blue by Madonna", q1_fake2:"Queen's Greatest Hits", 
-	q2_status:"new", q2_answer:"Taylor Swift", q2_fake:"Swiftly", q2_fake2:"Blonde",
-	q3_status:"new", q3_answer:"Bonn", q3_fake:"Manhattan", q3_fake2:"London", 
-	q4_status:"new", q4_answer:"88", q4_fake:"45", q4_fake2:"56", 
-	q5_status:"new", q5_answer:"London", q5_fake:"Los Angeles", q5_fake2:"Manhattan" 
+	q1_status:"new", q1_answer:"Thriller by Michael Jackson", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Taylor Swift", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Bonn", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"88", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"London", q5_fake:"a5_f", q5_fake2:"a1_f2" 
 };
 
 var movie_arr = {
@@ -104,11 +104,11 @@ var movie_arr = {
 	question3:"Who was the female lead in the movie 'Titanic'?",
 	question4:"In what year was the first Harry Potter movie released?",
 	question5:"Superman is a fictional superhero from what fictional planet?",
-	q1_status:"new", q1_answer:"Pluto", q1_fake:"Goofy", q1_fake2:"Donald", 
-	q2_status:"new", q2_answer:"Star Wars", q2_fake:"WALL-E", q2_fake2:"Aliens",
-	q3_status:"new", q3_answer:"Kate Winslet", q3_fake:"Madonna", q3_fake2:"Dana Scully", 
-	q4_status:"new", q4_answer:"2001", q4_fake:"1999", q4_fake2:"2006", 
-	q5_status:"new", q5_answer:"Krypton", q5_fake:"Cyrptone", q5_fake2:"Casio" 
+	q1_status:"new", q1_answer:"Pluto", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Star Wars", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Kate Winslet", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"2001", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Krypton", q5_fake:"a5_f", q5_fake2:"a1_f2" 
 };
 
 var world_arr = {
@@ -119,11 +119,11 @@ var world_arr = {
 	question3:"Lemurs, a type of primate, are native to what island nation?",
 	question4:"What is the official language of the Canadian province Quebec?",
 	question5:"The martial art of kung fu originated in which country?",
-	q1_status:"new", q1_answer:"The Burj Khalifa", q1_fake:"The Emprie State Building", q1_fake2:"The Seattle Space Needle", 
-	q2_status:"new", q2_answer:"Cricket", q2_fake:"Water Polo", q2_fake2:"Bat Racing",
-	q3_status:"new", q3_answer:"Madagascar", q3_fake:"Lemuria", q3_fake2:"Easter Island", 
-	q4_status:"new", q4_answer:"French", q4_fake:"Canadian", q4_fake2:"English", 
-	q5_status:"new", q5_answer:"China", q5_fake:"France", q5_fake2:"Japan"
+	q1_status:"new", q1_answer:"The Burj Khalifa", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Cricket", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Madagascar", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"French", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"China", q5_fake:"a5_f", q5_fake2:"a1_f2"
 };
 
 var history_arr = {
@@ -134,11 +134,11 @@ var history_arr = {
 	question3:"What is the most popular board game of all time?",
 	question4:"Which Patriot leader organized the Boston Tea Party in 1773?",
 	question5:"What was the Roman name for the goddess Hecate?",
-	q1_status:"new", q1_answer:"1815", q1_fake:"1890", q1_fake2:"1900", 
-	q2_status:"new", q2_answer:"Portugal", q2_fake:"United Kingdom", q2_fake2:"Germany",
-	q3_status:"new", q3_answer:"Chess", q3_fake:"Monopoly", q3_fake2:"Catan", 
-	q4_status:"new", q4_answer:"Samuel Adams", q4_fake:"Samuel Jackson", q4_fake2:"Samwise Gamgee", 
-	q5_status:"new", q5_answer:"Trivia", q5_fake:"Zues", q5_fake2:"Aphrodite"
+	q1_status:"new", q1_answer:"1815", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Portugal", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Chess", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"Samuel Adams", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Trivia", q5_fake:"a5_f", q5_fake2:"a1_f2"
 };
 
 var computer_arr = {
@@ -149,11 +149,11 @@ var computer_arr = {
 	question3:"What year was Facebook founded?",
 	question4:"In what year was the iPhone first released?",
 	question5:"1,024 Gigabytes is equal to one what?",
-	q1_status:"new", q1_answer:"1976", q1_fake:"1993", q1_fake2:"1988", 
-	q2_status:"new", q2_answer:"World Wide Web", q2_fake:"Wide Wide Web", q2_fake2:"with website width",
-	q3_status:"new", q3_answer:"2004", q3_fake:"1991", q3_fake2:"2011", 
-	q4_status:"new", q4_answer:"2007", q4_fake:"2000", q4_fake2:"2009", 
-	q5_status:"new", q5_answer:"Terabyte", q5_fake:"MegaByte", q5_fake2:"MeterByte"
+	q1_status:"new", q1_answer:"1976", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"World Wide Web", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"2004", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"2007", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Terabyte", q5_fake:"a5_f", q5_fake2:"a1_f2"
 };
 
 var food_arr = {
@@ -164,11 +164,11 @@ var food_arr = {
 	question3:"Red Vines is a popular brand of what type of candy?",
 	question4:"Magarine is sold as a replacement for what?",
 	question5:"A tandoor is a type of what?",
-	q1_status:"new", q1_answer:"Kentucky Fried Chicken", q1_fake:"Kwik Fried Chicken", q1_fake2:"Kool Food Chicken", 
-	q2_status:"new", q2_answer:"Vietnam", q2_fake:"France", q2_fake2:"Australia",
-	q3_status:"new", q3_answer:"Red licorice", q3_fake:"Red Chip", q3_fake2:"Gum", 
-	q4_status:"new", q4_answer:"Butter", q4_fake:"Mayonnaise", q4_fake2:"Egg", 
-	q5_status:"new", q5_answer:"Oven", q5_fake:"Bagel", q5_fake2:"Pan" 
+	q1_status:"new", q1_answer:"Kentucky Fried Chicken", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Vietnam", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Red licorice", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"Butter", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Oven", q5_fake:"a5_f", q5_fake2:"a1_f2" 
 };
 
 var literature_arr = {
@@ -179,10 +179,10 @@ var literature_arr = {
 	question3:"Manga are a type of comics from what country?",
 	question4:"Who wrote the 1936 novel 'Gone with the Wind'?",
 	question5:"Who wrote the fairy tale 'The Ugly Duckling'?",
-	q1_status:"new", q1_answer:"Violin", q1_fake:"Guitar", q1_fake2:"Trumpet", 
-	q2_status:"new", q2_answer:"Bob Dylan", q2_fake:"Adele", q2_fake2:"Beyonce",
-	q3_status:"new", q3_answer:"Japan", q3_fake:"Germany", q3_fake2:"China", 
-	q4_status:"new", q4_answer:"Margaret Mitchell", q4_fake:"Margaret Thatcher", q4_fake2:"Mary Shelly", 
+	q1_status:"new", q1_answer:"Violin", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Bob Dylan", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Japan", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"Margaret Mitchell", q4_fake:"a4_f", q4_fake2:"a1_f2", 
 	q5_status:"new", q5_answer:"Hans Christian Andersen", q5_fake:"a5_f", q5_fake2:"a1_f2"
 };
 
@@ -191,14 +191,14 @@ var money_arr = {
 	myName:"Money", 
 	question1:"What is the Spanish word for money?", 
 	question2:"What is the official currency of the country Ecuador?", 
-	question3:"Which President was on the U.S. $1,000 dollar bill?",
-	question4:"What building is on the back of a U.S. 100 dollar bill?",
+	question3:"Which President is on the U.S. $1,000 dollar bill?",
+	question4:"What building is found on the back of a U.S. 100 dollar bill?",
 	question5:"What year was the last $2 bill printed in the U.S. ?",
-	q1_status:"new", q1_answer:"Dinero", q1_fake:"Bano", q1_fake2:"Cento", 
+	q1_status:"new", q1_answer:"Dinero", q1_fake:"a1_f", q1_fake2:"a1_f2", 
 	q2_status:"new", q2_answer:"U.S. Dollar", q2_fake:"a2_f", q2_fake2:"a1_f2",
-	q3_status:"new", q3_answer:"Grover Cleveland", q3_fake:"Alexander Hamilton", q3_fake2:"Michael Moore", 
-	q4_status:"new", q4_answer:"Independence Hall", q4_fake:"The White House", q4_fake2:"the lincoln memorial", 
-	q5_status:"new", q5_answer:"2003", q5_fake:"1980", q5_fake2:"1800"
+	q3_status:"new", q3_answer:"Grover Cleveland", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"Independence Hall", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"2003", q5_fake:"a5_f", q5_fake2:"a1_f2"
 };
 
 var policital_arr = {
@@ -207,13 +207,13 @@ var policital_arr = {
 	question1:"How many US Supreme Court justices are there?", 
 	question2:"Which US president was known as 'The Great Communicator'?", 
 	question3:"Who is the current supreme leader of North Korea?",
-	question4:"What animal is the symbol of the U.S. democratic party?",
-	question5:"Barack Obama was first elected president of the United States in what year?",
-	q1_status:"new", q1_answer:"9", q1_fake:"3", q1_fake2:"20", 
-	q2_status:"new", q2_answer:"Ronald Regan", q2_fake:"John F. Kennedy", q2_fake2:"Donald Trump",
-	q3_status:"new", q3_answer:"Kim Jong Un", q3_fake:"Donald Trump", q3_fake2:"Mao Zedong", 
+	question4:"What building is found on the back of a U.S. 100 dollar bill?",
+	question5:"What animal is the symbol of the U.S. democratic party?",
+	q1_status:"new", q1_answer:"9", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Ronald Regan", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Kim Jong Un", q3_fake:"a3_f", q3_fake2:"a1_f2", 
 	q4_status:"new", q4_answer:"Donkey", q4_fake:"a4_f", q4_fake2:"a1_f2", 
-	q5_status:"new", q5_answer:"2008", q5_fake:"2000", q5_fake2:"2010" 
+	q5_status:"new", q5_answer:"2008", q5_fake:"a5_f", q5_fake2:"a1_f2" 
 };
 
 
@@ -225,11 +225,11 @@ var space_arr = {
 	question3:"What is the smallest planet in our solar system?",
 	question4:"Our solar system is located in what galaxy?",
 	question5:"Who was the first human to travel into space?",
-	q1_status:"new", q1_answer:"Neptune", q1_fake:"poseidon", q1_fake2:"Mars", 
-	q2_status:"new", q2_answer:"Jupiter", q2_fake:"Mars", q2_fake2:"Mercury",
-	q3_status:"new", q3_answer:"Mercury", q3_fake:"Jupiter", q3_fake2:"Saturn", 
-	q4_status:"new", q4_answer:"The Milky Way Galaxy", q4_fake:"The Earth Galaxy", q4_fake2:"Galaxy Number One", 
-	q5_status:"new", q5_answer:"Yuri Gagarin", q5_fake:"Aaron Carter", q5_fake2:"Calvin Broadus Jr" 
+	q1_status:"new", q1_answer:"Neptune", q1_fake:"a1_f", q1_fake2:"a1_f2", 
+	q2_status:"new", q2_answer:"Jupiter", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q3_status:"new", q3_answer:"Mercury", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"The Milky Way Galaxy", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"Yuri Gagarin", q5_fake:"a5_f", q5_fake2:"a1_f2" 
 };
 
 var animal_arr = {
@@ -240,11 +240,11 @@ var animal_arr = {
 	question3:"Which bird is often associated with delivering babies?",
 	question4:"Polar bears feed mainly on what animal?",
 	question5:"What is a group of rhinoceros called?",
-	q1_status:"new", q1_answer:"A 'pride'", q1_fake:"A 'king'", q1_fake2:"A 'pack'", 
+	q1_status:"new", q1_answer:"A pride", q1_fake:"a1_f", q1_fake2:"a1_f2", 
 	q2_status:"new", q2_answer:"Three", q2_fake:"a2_f", q2_fake2:"a1_f2",
-	q3_status:"new", q3_answer:"Stork", q3_fake:"Seagull", q3_fake2:"Dove", 
-	q4_status:"new", q4_answer:"Seals", q4_fake:"salmon", q4_fake2:"whale", 
-	q5_status:"new", q5_answer:"A 'crash'", q5_fake:"a 'pod'", q5_fake2:"a 'scram'"
+	q3_status:"new", q3_answer:"Stork", q3_fake:"a3_f", q3_fake2:"a1_f2", 
+	q4_status:"new", q4_answer:"Seals", q4_fake:"a4_f", q4_fake2:"a1_f2", 
+	q5_status:"new", q5_answer:"A 'crash' ", q5_fake:"a5_f", q5_fake2:"a1_f2"
 };
 
 
