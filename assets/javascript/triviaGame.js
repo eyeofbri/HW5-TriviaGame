@@ -2,8 +2,8 @@ var gameOver = false;
 var gameStarted = false;
 var canStart = false;
 var timerInterval;
-var time = 0;
-var startTime = 45;
+var time = 45;
+var startTime = 8;
 var position_p1 = 0;
 var position_p2 = 0;
 var position_p3 = 0;
@@ -13,9 +13,13 @@ var total_correctlyAnswered = 0;
 
 var snail2_movement = [];
 var snail2_used = false;
+var p2_lifetime = 0;
 var snail3_movement = [];
 var snail3_used = false;
+var p3_lifetime = 0;
 var globalTime = 0;
+
+var player_movement = [];
 
 var categories = ["Television", "Science", "Art", "Geography", "Music",
 				"Movie", "World", "History", "Computer", "Food",
@@ -241,7 +245,7 @@ var animal_arr = {
 	question4:"Polar bears feed mainly on what animal?",
 	question5:"What is a group of rhinoceros called?",
 	q1_status:"new", q1_answer:"A 'pride'", q1_fake:"A 'king'", q1_fake2:"A 'pack'", 
-	q2_status:"new", q2_answer:"Three", q2_fake:"a2_f", q2_fake2:"a1_f2",
+	q2_status:"new", q2_answer:"Three", q2_fake:"One", q2_fake2:"Eight",
 	q3_status:"new", q3_answer:"Stork", q3_fake:"Seagull", q3_fake2:"Dove", 
 	q4_status:"new", q4_answer:"Seals", q4_fake:"salmon", q4_fake2:"whale", 
 	q5_status:"new", q5_answer:"A 'crash'", q5_fake:"a 'pod'", q5_fake2:"a 'scram'"
@@ -312,6 +316,8 @@ function gameFunctions(whatToDo) {
 			canStart = true;
 		}, 10);
 		
+		player_movement = [];
+		player_movement.length = 0;
 	}
 
 	if(whatToDo == "clearAllRows"){
@@ -370,9 +376,19 @@ function gameFunctions(whatToDo) {
 		if(time != 0){
     		time = time-1;
     		globalTime +=1;
-    		// console.log(globalTime);
+
+    		if(contains(snail2_movement, globalTime)){
+    			console.log("Snail 2 moved forward");
+    			snailAI("p2", "forward");
+    		}
+    		if(contains(snail3_movement, globalTime)){
+    			console.log("Snail 3 moved forward");
+    			snailAI("p3", "forward");
+    		}
+
     		var currentTime = timeConverter( time );
     		$("#timer").html(currentTime);
+    		shakeThings($("#timer"), true);
 
     		if(position_p1 >= 100){
     			console.important("YOU WIN!");
@@ -456,6 +472,44 @@ function gameFunctions(whatToDo) {
 			$winStats.attr("id","win-stats");
 			$("#row-2").append($winStats);
 			shakeThings($winStats, true);
+
+			//set inital lifetimes
+			if(p2_lifetime == 0 && snail2_movement.length > 0){
+				p2_lifetime = globalTime;
+			}
+			if(p3_lifetime == 0 && snail3_movement.length > 0){
+				p3_lifetime = globalTime;
+			}
+
+
+			//player 2 and three AI changing
+			var canWriteNewAI = true;
+			var p2_checked = false;
+			//is p2 on screen?
+			if($(".snail-2-holder").class("")){
+				//is global time > then p2 lifetime?
+				if(globalTime > p2_lifetime){
+					//write over current p2 with temp arr
+					snail2_movement = player_movement;
+					canWriteNewAI = false;
+					console.log("snail 2's movement overwritten!")
+				}
+				p2_check = true;
+			}else{
+				p2_check = true;
+			}
+			//if p2Checked and canWriteNewAI
+			if(p2Checked && canWriteNewAI){
+				//is p3 on screen?
+				if($(".snail-3-holder").class("")){
+					//is global time > then p3 lifetime?
+					if(globalTime > p2_lifetime){
+						snail3_movement = player_movement;
+						console.log("snail 3's movement overwritten!")
+					}
+				}
+			}
+
     	}
 	}
 }
@@ -808,6 +862,12 @@ function questionSpawner(category, questionNumber, rowParent) {
 				if(!snail2_used){
 					snail2_movement.push(globalTime);
 				}
+				if(!snail3_used && snail2_used){
+					snail3_movement.push(globalTime);
+				}
+
+				//also push into the player movement every round
+				player_movement.push(globalTime);
 				
 
 			}
@@ -882,7 +942,6 @@ function exitCategoryButton(which) {
 }
 
 function snailAI(whichSnail, whatToDo) {
-
 	if(whichSnail == "p1"){
 		if(whatToDo == "reset"){ position_p1 = 0; }
 		if(whatToDo == "forward"){ position_p1 += snailPower; }
@@ -891,26 +950,18 @@ function snailAI(whichSnail, whatToDo) {
 	}
 	if(whichSnail == "p2"){
 		if(whatToDo == "reset"){ position_p2 = 0; }
-		if(whatToDo == "forward"){ position_p2 = + snailPower; }
+		if(whatToDo == "forward"){ position_p2 += snailPower; }
 		$("#snail-2").css( "margin-left", position_p2 + "%" );
 		$("#snail-2-trail").css( "width", (position_p2-0.2) + "%" );
 	}
 	if(whichSnail == "p3"){
 		if(whatToDo == "reset"){ position_p3 = 0; }
-		if(whatToDo == "forward"){ position_p3 = + snailPower; }
+		if(whatToDo == "forward"){ position_p3 += snailPower; }
 		$("#snail-3").css( "margin-left", position_p3 + "%" );
 		$("#snail-3-trail").css( "width", (position_p3-0.2) + "%" );
 	}
-
-	if(whichSnail == "moveSnail2"){
-		for (var i = 0; i < snail2_movement.length; i++) {
-			setTimeout(function() {
-				snailAI("p2", "forward");
-			}, (snail2_movement[i]*1000) );
-		}
-		
-	}
 }
+
 
 /*///////*/
 /*BEGIN */
@@ -975,6 +1026,14 @@ function timeConverter(t) {
     }
 
     return minutes + ":" + seconds;
+}
+// returns a bool for an element in array check
+function contains(arr, element) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === element) {
+            return true;
+        }
+    }return false;
 }
 
 /*END */
