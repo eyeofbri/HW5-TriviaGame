@@ -2,8 +2,8 @@ var gameOver = false;
 var gameStarted = false;
 var canStart = false;
 var timerInterval;
-var time = 45;
-var startTime = 8;
+var time = 0;
+var startTime = 45;
 var position_p1 = 0;
 var position_p2 = 0;
 var position_p3 = 0;
@@ -486,7 +486,7 @@ function gameFunctions(whatToDo) {
 			var canWriteNewAI = true;
 			var p2_checked = false;
 			//is p2 on screen?
-			if($(".snail-2-holder").class("")){
+			if( $(".snail-2-holder").class() == ""){
 				//is global time > then p2 lifetime?
 				if(globalTime > p2_lifetime){
 					//write over current p2 with temp arr
@@ -501,7 +501,7 @@ function gameFunctions(whatToDo) {
 			//if p2Checked and canWriteNewAI
 			if(p2Checked && canWriteNewAI){
 				//is p3 on screen?
-				if($(".snail-3-holder").class("")){
+				if($(".snail-3-holder").class() == ""){
 					//is global time > then p3 lifetime?
 					if(globalTime > p2_lifetime){
 						snail3_movement = player_movement;
